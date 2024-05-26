@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* reduce harsh ness of darkmode to light and vice versa */
+*{
+  /* for all elements */
+  @apply transition-colors duration-200;
+
+}
