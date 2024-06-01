@@ -1,27 +1,18 @@
-"use client"
-import Link from "next/link";
-import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
-export default function NavBar(){
-    // tracks state of darkmode
-    const [darkMode, setDarkMode] = useState(false);
-    // connect vaue of state var to button
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-    }
-
+const NavBar = () => {
     return (
-        // dyanamic string so darkmode and it is true add dar;
-        <div className={`${darkMode && "dark"}`}>
-        <nav className="w-full relative flex items-center justify-between max-w-2xl mx-auto px-4 py-5">
-            <Link href="/" className="font-bold text-3xl dark:text-white">Logo</Link>
-            <button className="absolute w-16 h-16 bottom-2 right-16 bg-neutral-800 dark:bg-white rounded-full text-white dark:text-black font-semibold"
-                    onClick={toggleDarkMode}>
-                        {/* if darkmode is turned on, text to light otherwise darl*/}
-                {darkMode ? "LIGHT" : "DARK"}
-            </button>
+        <nav className="py-3 dark:bg-dark">
+            <div className="w-[90%] mx-auto flex justify-between items-center">
+            <h1 className="tetx-3xl font-bold uppercase flex-1 text-gray-900 dark:text-white">
+                Next <span className="text-teal-400">Playground</span>
+            </h1>
+            <div className="flex flex-1 justify-end">
+                <ThemeToggle/>
+            </div>
+            </div>
         </nav>
-        </div>
+    )
+};
 
-    );
-}
+export default NavBar;
