@@ -1,0 +1,2 @@
+## My perseonal blog for my web development journey
+I will use tools like Nextjs, Tailwind css, React, daisyui, flowbite and more. Along with languages like Typescript, html, etc. I will use this blog to document my journey with each project I build. Each of my blogs will contain instructions of how to use the project and tools use to develop the porject as well as hwo to use the same tools to replicate the project.
