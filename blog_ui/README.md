@@ -1,8 +1,8 @@
--app).
+# How To Run The Pogram
 
-## Getting Started
+1. Cd into the **blog_ui** directory
 
-First, run the development server:
+2. Run the development server:
 
 ```bash
 npm run dev
@@ -14,9 +14,4 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-npm insta
-
-<!-- npm i next-themes -->
-npm install react-icons
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
